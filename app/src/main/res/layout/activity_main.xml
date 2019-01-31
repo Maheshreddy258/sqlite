@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="ID"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editName"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editMarks"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignBottom="@+id/editName"
+        android:text="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="182dp"
+        android:text="Surname"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_alignBottom="@+id/editMarks"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:text="Marks"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <EditText
+        android:id="@+id/editSurname"
+        android:layout_width="196dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-196dp"
+        android:layout_marginTop="168dp"
+        android:layout_toEndOf="@+id/editName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <EditText
+        android:id="@+id/editMarks"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="223dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="137dp"
+        android:text="AddData"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnadd"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="0dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnadd"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/btndlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="82dp"
+        android:text="Delete" />
+
+
+
+</RelativeLayout>
